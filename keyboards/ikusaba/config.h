@@ -13,8 +13,8 @@
 #define PRODUCT      ikusaba
 
 /* key matrix size */
-#define MATRIX_ROWS 2
-#define MATRIX_COLS 3
+#define MATRIX_ROWS 8
+#define MATRIX_COLS 6
 
 /*
  * Keyboard Matrix Assignments
@@ -26,8 +26,8 @@
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { D0, D5 }
-#define MATRIX_COL_PINS { F1, F0, B0 }
+#define MATRIX_ROW_PINS { F4, F5, F6, F7 }
+#define MATRIX_COL_PINS { D1, D0, D4, C6, D7, E6 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL */
