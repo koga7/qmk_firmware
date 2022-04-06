@@ -13,8 +13,8 @@
 #define PRODUCT      ikusaba
 
 /* key matrix size */
-#define MATRIX_ROWS 8
-#define MATRIX_COLS 6
+#define MATRIX_ROWS 4
+#define MATRIX_COLS 12
 
 /*
  * Keyboard Matrix Assignments
@@ -26,8 +26,8 @@
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { F4, F5, F6, F7 }
-#define MATRIX_COL_PINS { D1, D0, D4, C6, D7, E6 }
+#define MATRIX_ROW_PINS { B4, B5, B2, B6 }
+#define MATRIX_COL_PINS { D1, D0, D4, C6, D7, E6, B3, B1, F7, F6, F5, F4 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL */
@@ -36,7 +36,7 @@
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
  */
-#define SOFT_SERIAL_PIN D2  // or D1, D2, D3, E6
+//#define SOFT_SERIAL_PIN D2  // or D1, D2, D3, E6
 
 //#define LED_NUM_LOCK_PIN B0
 //#define LED_CAPS_LOCK_PIN B1
