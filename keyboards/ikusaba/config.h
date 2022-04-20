@@ -49,7 +49,7 @@
 //#define BACKLIGHT_BREATHING
 
 #define RGB_DI_PIN D3
-#ifdef RGB_DI_PIN
+#ifdef RGBLIGHT_ENABLE
     #define RGBLED_NUM 1
     #define RGBLIGHT_HUE_STEP 10
     #define RGBLIGHT_SAT_STEP 10
