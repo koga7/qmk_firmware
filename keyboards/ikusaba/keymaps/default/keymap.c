@@ -15,7 +15,7 @@ enum layer_number {
 #define SHIFT SFT_T(KC_SPC)
 #define CTRL CTL_T(KC_DEL)
 #define WIN WIN_T(KC_Z)
-#define ALT ALT_T(KC_V)
+#define ALT ALT_T(KC_SLSH)
 #define ZKHK C(KC_SPC)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -32,10 +32,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * `-----------------------------------------'      `-----------------------------------------'
      */
   [_QWERTY] = LAYOUT(
-              KC_Q, KC_P, KC_U,     KC_Y,  KC_COMM,  KC_J,  KC_D,   KC_H, KC_G, KC_QUOT,
-        ZKHK, KC_I, KC_O, KC_E,     KC_A,  KC_DOT,   KC_K,  KC_T,   KC_N, KC_S, KC_R,    KC_MINS,
-        CTRL, WIN,  KC_X, KC_SLSH,  KC_C,  KC_SCLN,  KC_M,  KC_L,   KC_F, KC_B, ALT,     KC_W,
-                                    SHIFT, LOWER,    RAISE, KC_BSPC
+              KC_Q, KC_Y, KC_U, KC_I,    KC_COMM,  KC_DOT, KC_D,   KC_H, KC_G, KC_W,
+        ZKHK, KC_P, KC_O, KC_E, KC_A,    KC_K,     KC_M,   KC_N,   KC_T, KC_S, KC_R, KC_MINS,
+        CTRL, WIN,  KC_X, KC_C, KC_SCLN, KC_V,     KC_J,   KC_L,   KC_F, KC_B, ALT,  KC_QUOT,
+                                SHIFT,   LOWER,    RAISE,  KC_BSPC
       ),
   [_LOWER] =  LAYOUT(
               KC_1,    KC_2,  KC_3,    KC_4,   KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,
@@ -55,9 +55,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * `-----------------------------------------'      `-----------------------------------------'
      */
   [_RAISE] =  LAYOUT(
-                 _______, _______, KC_PLUS, KC_PIPE, KC_LABK, _______, KC_GRV,  KC_LCBR, KC_RCBR, KC_DQT,
-        _______, _______, _______, KC_EQL,  KC_BSLS, KC_RABK, KC_TILD, KC_UP,   KC_LBRC, KC_RBRC, _______, KC_UNDS,
-        _______, _______, _______, KC_QUES, _______, KC_COLN, KC_LEFT, KC_DOWN, KC_RGHT, _______, KC_EQL,  _______,
+                 _______, _______, KC_PLUS, KC_PIPE, KC_LABK, KC_RABK, KC_GRV,  KC_LCBR, KC_RCBR, _______,
+        _______, _______, _______, KC_EQL,  KC_BSLS, _______, KC_TILD, KC_UP,   KC_LBRC, KC_RBRC, _______, KC_UNDS,
+        _______, _______, _______, _______, KC_COLN, _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, KC_QUES, KC_DQT,
         _______, _______, _______, _______
       ),
   [_ADJUST] =  LAYOUT(
