@@ -30,10 +30,10 @@ enum planck_layers {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QWERTY] = LAYOUT_planck_grid(
-    JP_ZKHK,        JP_COLN,      JP_QUOT, JP_MINS, JP_CIRC,      JP_YEN,         JP_MHEN, JP_HENK, JP_AT,   JP_LBRC, JP_RBRC, KC_DEL,
-    KC_TAB,         KC_Q,         KC_W,    KC_E,    KC_R,         KC_T,           JP_COMM, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
-    LCTL_T(KC_ESC), KC_A,         KC_S,    KC_D,    KC_F,         KC_G,           JP_DOT,  KC_H,    KC_J,    KC_K,    KC_L,    LT(_RAISE, RGB_HUI),
-    LSFT_T(KC_B),   LGUI_T(KC_Z), KC_X,    KC_C,    LALT_T(KC_V), LSFT_T(KC_SPC), KC_ENT,  KC_BSPC, KC_N,    KC_M,    JP_SLSH, LT(_LOWER, JP_BSLS)
+    JP_ZKHK,        JP_SCLN,      JP_COLN,      JP_MINS, JP_CIRC, JP_YEN,         JP_MHEN,             JP_HENK, JP_AT,   JP_LBRC, JP_RBRC, KC_DEL,
+    KC_TAB,         KC_Q,         KC_W,         KC_E,    KC_R,    KC_T,           JP_COMM,             KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
+    LCTL_T(KC_ESC), KC_A,         KC_S,         KC_D,    KC_F,    KC_G,           JP_DOT,              KC_H,    KC_J,    KC_K,    KC_L,    LT(_RAISE, JP_EXLM),
+    LSFT_T(KC_B),   LGUI_T(KC_Z), LALT_T(KC_X), KC_C,    KC_V,    LSFT_T(KC_SPC), LT(_RAISE, KC_ENT),  KC_BSPC, KC_N,    KC_M,    JP_SLSH, LT(_LOWER, JP_BSLS)
 ),
 [_LOWER] = LAYOUT_planck_grid(
     _______, JP_1,    JP_2,    JP_3,    JP_4,   JP_5,     JP_6,    JP_7,    JP_8,    JP_9,    JP_0,    _______,
@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_RAISE] = LAYOUT_planck_grid(
     KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+    _______, _______, _______, _______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
 ),
 /* Adjust (Lower + Raise)
