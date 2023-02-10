@@ -1,0 +1,3 @@
+//   name     result    chord keys
+COMB(AS_ESC,   KC_ESC,   KC_A, KC_S)
+COMB(SD_OSM_S, OSM(MOD_LSFT), KC_S, KC_D)
