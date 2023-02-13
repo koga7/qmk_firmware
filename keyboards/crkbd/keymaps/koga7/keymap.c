@@ -40,7 +40,7 @@ enum layers {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_DEFAULT] = LAYOUT_split_3x6_3(
-        OSM_GUI,  KC_Q,    KC_L,    KC_U,    KC_MINS, KC_DOT,     KC_F,    KC_W,    KC_R,    KC_J,    KC_P,    KC_DEL,
+        OSM_GUI,  KC_Q,    KC_L,    KC_U,    KC_MINS, KC_DOT,     KC_F,    KC_W,    KC_R,    KC_Y,    KC_P,    KC_DEL,
         ESC_ALT,  KC_E,    KC_I,    KC_A,    KC_O,    KC_COMM,    KC_K,    KC_T,    KC_N,    KC_S,    KC_H,    KC_LBRC,
         OSM_CTL,  KC_SLSH, KC_Z,    KC_X,    KC_C,    KC_V,       KC_G,    KC_D,    KC_M,    KC_J,    KC_B,    OSL(_LAYER4),
                                     L4_MHEN, L1_TAB,  SPC_SFT,    LT3_ENT, KC_BSPC, L2_HENK
@@ -64,9 +64,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                     _______, _______, _______,    _______, _______, _______
     ),
     [_LAYER4] = LAYOUT_split_3x6_3(
-        _______,  KC_P7,   KC_P8,   KC_P9,   XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, C(G(KC_D)),    C(G(KC_F4)),   C(S(KC_DEL)), _______,
-        _______,  KC_P4,   KC_P5,   KC_P6,   XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, C(G(KC_LEFT)), C(G(KC_RGHT)), C(S(KC_ESC)), _______,
-        KC_P0,    KC_P1,   KC_P2,   KC_P3,   XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX,       XXXXXXX,       XXXXXXX,      _______,
+        _______,  KC_P7,   KC_P8,   KC_P9,   KC_PMNS, KC_PSLS,    XXXXXXX, XXXXXXX, C(G(KC_D)),    C(G(KC_F4)),   C(S(KC_DEL)), _______,
+        KC_PDOT,  KC_P4,   KC_P5,   KC_P6,   KC_PPLS, KC_PAST,    XXXXXXX, XXXXXXX, C(G(KC_LEFT)), C(G(KC_RGHT)), C(S(KC_ESC)), _______,
+        KC_P0,    KC_P1,   KC_P2,   KC_P3,   KC_PENT, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX,       XXXXXXX,       G(KC_H),      _______,
                                     _______, _______, _______,    _______, _______, _______
     )
 };
