@@ -33,9 +33,9 @@ enum layers {
 #define OSM_GUI OSM(MOD_LGUI)
 #define ESC_ALT ALT_T(KC_ESC)
 #define SPC_SFT SFT_T(KC_SPC)
-#define L1_TAB LT(_LAYER1, KC_TAB)
+#define L1_ENT LT(_LAYER1, KC_ENT)
 #define L2_HENK LT(_LAYER2, KC_F14)
-#define LT3_ENT LT(_LAYER3, KC_ENT)
+#define L3_TAB LT(_LAYER3, KC_TAB)
 #define L4_MHEN LT(_LAYER4, KC_F13)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         OSM_GUI,  KC_Q,    KC_L,    KC_U,    KC_MINS, KC_DOT,     KC_F,    KC_W,    KC_R,    KC_Y,    KC_P,    KC_DEL,
         ESC_ALT,  KC_E,    KC_I,    KC_A,    KC_O,    KC_COMM,    KC_K,    KC_T,    KC_N,    KC_S,    KC_H,    KC_LBRC,
         OSM_CTL,  KC_SLSH, KC_Z,    KC_X,    KC_C,    KC_V,       KC_G,    KC_D,    KC_M,    KC_J,    KC_B,    OSL(_LAYER4),
-                                    L4_MHEN, L1_TAB,  SPC_SFT,    LT3_ENT, KC_BSPC, L2_HENK
+                                    L4_MHEN, SPC_SFT, L1_ENT,     L3_TAB, KC_BSPC, L2_HENK
     ),
     [_LAYER1] = LAYOUT_split_3x6_3(
         _______,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,    KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, _______,
