@@ -41,14 +41,14 @@ enum layers {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_DEFAULT] = LAYOUT_split_3x6_3(
         OSM_GUI,  KC_Q,    KC_L,    KC_U,    KC_MINS, KC_DOT,     KC_F,    KC_W,    KC_R,    KC_Y,    KC_P,    KC_DEL,
-        ESC_ALT,  KC_E,    KC_I,    KC_A,    KC_O,    KC_COMM,    KC_K,    KC_T,    KC_N,    KC_S,    KC_H,    KC_LBRC,
+        ESC_ALT,  KC_I,    KC_O,    KC_E,    KC_A,    KC_COMM,    KC_K,    KC_T,    KC_N,    KC_S,    KC_H,    KC_LBRC,
         OSM_CTL,  KC_SLSH, KC_Z,    KC_X,    KC_C,    KC_V,       KC_G,    KC_D,    KC_M,    KC_J,    KC_B,    OSL(_LAYER4),
                                     L4_MHEN, SPC_SFT, L1_ENT,     L3_TAB, KC_BSPC, L2_HENK
     ),
     [_LAYER1] = LAYOUT_split_3x6_3(
         _______,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,    KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, _______,
-        _______,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,       KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
-        _______,  KC_BSLS, XXXXXXX, KC_QUES, KC_EXLM, XXXXXXX,    XXXXXXX, KC_LPRN, KC_RPRN, XXXXXXX, XXXXXXX, _______,
+        _______,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,       KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_RBRC,
+        _______,  KC_BSLS, KC_PIPE, XXXXXXX, KC_QUES, KC_EXLM,    XXXXXXX, KC_LPRN, KC_RPRN, XXXXXXX, XXXXXXX, _______,
                                     _______, _______, _______,    _______, _______, _______
     ),
     [_LAYER2] = LAYOUT_split_3x6_3(
@@ -59,7 +59,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_LAYER3] = LAYOUT_split_3x6_3(
         _______,  XXXXXXX, XXXXXXX, KC_PGUP, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX, _______,
-        _______,  XXXXXXX, KC_HOME, KC_PGDN, KC_END,  XXXXXXX,    XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, _______,
+        _______,  XXXXXXX, KC_HOME, KC_PGDN, KC_END,  XXXXXXX,    KC_BTN3, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, _______,
         _______,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
                                     _______, _______, _______,    _______, _______, _______
     ),
