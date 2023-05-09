@@ -1,0 +1,2 @@
+//   name     result    chord keys
+COMB(PL_RBRC, KC_RBRC, KC_P, KC_LBRC)
